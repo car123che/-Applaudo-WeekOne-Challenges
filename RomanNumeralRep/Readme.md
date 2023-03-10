@@ -40,21 +40,19 @@ The program will receive a positive integer and will return the Roman Numeral Re
 * An error message if the input is bigger than 3999
 
 ## Pseudocode
-1. Validate if the input is an integer
-   1. If not return a message saying that the input must be an integer
-2. Validate if the input is greater than 0
+1. Validate if the input is greater than 0
    1. If not return a message saying the input must be greater than 0
-3. Validate if the in put is lower than 4000
+2. Validate if the in put is lower than 4000
    1. If not return a message saying that the input musht be lower than 4000
-4.  Declare an array with the posible values that  Roman can take order from the biggest to the smallest. `[ 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 ]`
-5. Declare an array with the Symbols of that values
+3.  Declare an array with the posible values that  Roman can take order from the biggest to the smallest. `[ 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 ]`
+4. Declare an array with the Symbols of that values
 `[ 'M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV','I']`
-6. Declare a integer counter. 
-7. Declare a string that will be the result. 
-8. While the input number is greater than 0
+5. Declare a integer counter. 
+6. Declare a string that will be the result. 
+7. While the input number is greater than 0
    1. If the substraction of the input with the element in the values array in the counter position is greater than 0, then substract that value and add the corresponding symbol to the string result.
    2. If not. Add 1 to the counter to use a lower value. 
-9. Return the corresponding string result.
+8. Return the corresponding string result.
     
 ## Flow Diagram
 ![Flow](img/Roman%20Numeral%20Representation.png)
@@ -62,6 +60,6 @@ The program will receive a positive integer and will return the Roman Numeral Re
 ## Test Cases
 * 0 => Message Error
 * 1998 => "MCMXCVIII"
-* 166 => "CDXVI"
+* 166 => "CLXVI"
 * 3999 => "MMMCMXCIX"
 * 4000 => Message Error
